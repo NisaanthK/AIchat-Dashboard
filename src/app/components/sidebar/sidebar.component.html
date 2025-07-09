@@ -1,0 +1,27 @@
+<nav class="sidebar" [ngClass]="{ 'collapsed': isCollapsed }">
+  <div class="sidebar-header">
+    <button (click)="toggleSidebar()" class="toggle-btn">
+      <i class="fas" [ngClass]="isCollapsed ? 'fa-angle-right' : 'fa-angle-left'"></i>
+    </button>
+    <h2 *ngIf="!isCollapsed">Tools</h2>
+  </div>
+
+  <ul class="sidebar-menu">
+    <li routerLink="/" routerLinkActive="active">
+      <i class="fas fa-comments icon"></i>
+      <span class="label" *ngIf="!isCollapsed">Chat</span>
+    </li>
+    <li>
+      <i class="fas fa-file-alt icon"></i>
+      <span class="label" *ngIf="!isCollapsed">Docs</span>
+    </li>
+    <li>
+      <i class="fas fa-image icon"></i>
+      <span class="label" *ngIf="!isCollapsed">Images</span>
+    </li>
+    <li>
+      <i class="fas fa-cog icon"></i>
+      <span class="label" *ngIf="!isCollapsed">Settings</span>
+    </li>
+  </ul>
+</nav>
