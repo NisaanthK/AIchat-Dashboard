@@ -1,27 +1,32 @@
 # AiToolDashboard
+A modern, collapsible sidebar UI built using Angular 17 — inspired by ChatGPT/Grok.  
+This project serves as a **UI foundation** for future AI tool integrations such as Chat, Document Assistants, Image Tools, or AI APIs.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+1. 🚀 Features
 
-## Development server
+- ⚡ Angular 17 + Standalone Components
+- 🎨 Collapsible sidebar (like ChatGPT)
+- 🎯 SCSS styling with dark theme
+- 💡 Responsive layout (desktop-first)
+- 🔗 Font Awesome icons
+- 🧩 Ready for backend/API integration (e.g., OpenAI, NestJS, Firebase)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+2. 📦 Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular 17
+- SCSS
+- Font Awesome
+- Modern layout principles (flexbox/grid)
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. 🛠️ Getting Started
 
-## Running unit tests
+npm install
+ng serve - Runs on http://localhost:4200/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. Notes
+No .env or backend needed
+node_modules/ is ignored via .gitignore
