@@ -13,8 +13,6 @@ export class SidebarComponent {
   isCollapsed = false;
 
   toggleSidebar() {
-    this.isCollapsed = !this.isCollapsed;
+    this.isCollapsed = !this.isCollapsed; // It includes a toggle button to collapse or expand the sidebar.
   }
 }
-// This component represents the sidebar of the application.
-// It includes a toggle button to collapse or expand the sidebar.
