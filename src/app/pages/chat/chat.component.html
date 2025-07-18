@@ -1,3 +1,10 @@
-<h1>Chat Page</h1>
-<p>This is the chat page.</p>
-<app-prompt-bar></app-prompt-bar>
+<div class="chat-page">
+  <div class="chat-box">
+    <div class="chat-messages">
+      <div *ngFor="let m of messages" class="message" [ngClass]="m.from">
+        {{ m.text }}
+      </div>
+    </div>
+    <app-prompt-bar class="prompt-bar" (send)="onSend($event)"></app-prompt-bar>
+  </div>
+</div>

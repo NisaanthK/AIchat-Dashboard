@@ -1,4 +1,4 @@
 <div class="prompt-bar-container">
-  <textarea placeholder="Enter your prompt here..."></textarea>
-  <button>Send</button>
+  <textarea #promptInput placeholder="Type a message…" ></textarea>
+  <button (click)="onSend(promptInput.value)">Send</button>
 </div>
